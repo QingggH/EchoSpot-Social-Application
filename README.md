@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a social application called EchoSpot which is similar to Twitter（X）, allowing users to interact on it.
+* This is a social application called EchoSpot which is similar to Twitter（X）, allowing users to interact on it.
 
-This project is a full-stack application based on JavaScript, developed with a front-end and back-end separation. The front end uses React.js, HTML and CSS, and the back end is based on Node.js, utilizing Express.js and RESTful API. The database used is MongoDB
+* This project is a full-stack application based on JavaScript, developed with a front-end and back-end separation. The front end uses React.js, HTML and CSS, and the back end is based on Node.js, utilizing Express.js and RESTful API. The database used is MongoDB
 
 ## Features of the application
 
