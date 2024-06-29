@@ -1,0 +1,153 @@
+.home-container {
+  flex: 1;
+  overflow-y: auto;
+  height: 90%;
+  background-color: #333;
+}
+.home-container::-webkit-scrollbar {
+  display: none;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.post-container {
+  padding: 1rem 0 0.5rem 20%;
+}
+.post-user {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Sono", monospace;
+  color: white;
+}
+.post-content {
+  display: inline-block;
+  word-wrap: break-word;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.3rem 0 0.3rem 0;
+  border-radius: 0.9rem;
+  background-color: #666;
+  color: white;
+  max-width: 60%;
+}
+.post-time {
+  font-size: 0.8rem;
+  color: black;
+  font-family: "Sono", monospace;
+}
+.reply-container {
+  padding: 0.2rem 0 0.3rem 25%;
+}
+.reply-user {
+  font-family: "Sono", monospace;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.reply-content {
+  display: inline-block;
+  word-wrap: break-word;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.3rem 0 0.3rem 0;
+  border-radius: 0.7rem;
+  background-color: #666;
+  color: #fff;
+  max-width: 60%;
+  position: relative;
+}
+.reply-content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -0.6rem;
+  border: 0.5rem solid transparent;
+  border-right-color: #666;
+  border-left: 0;
+  border-top: 0;
+  border-top: 6px solid transparent;
+}
+.reply-time {
+  font-size: 0.8rem;
+  font-family: "Sono", monospace;
+}
+.post-details {
+  padding: 0 0 2rem 20%;
+}
+.reply-area {
+  width: 50%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  outline: none;
+  text-indent: 1rem;
+}
+.reply-area:focus {
+  outline: none;
+  border-color: palegoldenrod;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.reply-area::placeholder {
+  font-family: "Sono", monospace;
+  padding-left: 0.5rem;
+}
+.reply-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Sono";
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reply-btn:hover {
+  background-color: #544bd2;
+}
+
+.reply-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.4);
+}
+hr {
+  border: none;
+  border-top: 0.5px solid #666;
+}
+@media (max-width: 768px) {
+  .home-container {
+    max-height: none;
+    height: 100vh;
+  }
+
+  .post-container,
+  .reply-container,
+  .post-details {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .reply-area {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.5rem;
+  }
+
+  .reply-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+.feed-text {
+  text-align: center;
+  color: #fff;
+  font-family: "Sono";
+  font-size: 1rem;
+}

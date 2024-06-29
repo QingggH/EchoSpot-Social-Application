@@ -1,0 +1,59 @@
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  height: 100%;
+}
+.login-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Coiny";
+}
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  flex: 1;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  outline: none;
+  text-indent: 1rem;
+}
+.login-input:focus {
+  outline: none;
+  border-color: palegoldenrod;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.login-input::placeholder {
+  font-family: "Sono", monospace;
+  padding-left: 0.5rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Sono";
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+  background-color: #544bd2;
+}
+.login-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.4);
+}
