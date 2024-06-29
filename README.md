@@ -8,9 +8,9 @@
 
 ## Features of the application
 
-1. User registration and log in
-2. Users can search for other registered users
-3. Users can follow other registered users or unfollow them
-4. Users can post and delete messages
-5. Users can see their and their followees' posts along with post time on the homepage in chronological order, based on the time of posting
-6. Users can reply messages posted by other users
+* User registration and log in
+* Users can search for other registered users
+* Users can follow other registered users or unfollow them
+* Users can post and delete messages
+* Users can see their and their followees' posts along with post time on the homepage in chronological order, based on the time of posting
+* Users can reply messages posted by other users
